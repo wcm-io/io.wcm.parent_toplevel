@@ -35,7 +35,7 @@
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
-  <description>Toplevel POM for all wcm.io Maven projects.</description>
+  <description>Toplevel POM for all wcm.io projects.</description>
   <url>${site.url}/${site.url.module.prefix}/</url>
 
   <scm>
@@ -500,7 +500,7 @@
     <site>
       <id>${site.deploy.id}</id>
       <name>Maven Site Deployment</name>
-      <url>${site.deploy.url}/${site.url.module.prefix}</url>
+      <url>${site.deploy.url}</url>
     </site>
   </distributionManagement>
 
