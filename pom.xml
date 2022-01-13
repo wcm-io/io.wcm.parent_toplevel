@@ -295,20 +295,6 @@
         </executions>
       </plugin>
 
-      <!-- Prefix release numbers with artifactId for GIT repo with more than one released artifact (only for this POM) -->
-      <plugin>
-        <groupId>com.amashchenko.maven.plugin</groupId>
-        <artifactId>gitflow-maven-plugin</artifactId>
-        <inherited>false</inherited>
-        <configuration>
-          <gitFlowConfig>
-            <releaseBranchPrefix>release/${project.artifactId}-</releaseBranchPrefix>
-            <hotfixBranchPrefix>hotfix/${project.artifactId}-</hotfixBranchPrefix>
-            <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
-          </gitFlowConfig>
-        </configuration>
-      </plugin>
-
     </plugins>
 
     <pluginManagement>
