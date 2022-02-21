@@ -25,7 +25,10 @@
 
     <release version="2.0.2" date="not released">
       <action type="update" dev="sseifert">
-        Update to aem-global-parent 2.0.2.
+        Set OddEvenVersionPolicy for gitflow-maven-plugin.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to aem-global-parent 2.0.4.
       </action>
     </release>
 
