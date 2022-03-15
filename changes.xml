@@ -23,6 +23,15 @@
     xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
   <body>
 
+    <release version="2.0.2" date="2022-03-15">
+      <action type="update" dev="sseifert">
+        Set OddEvenVersionPolicy for gitflow-maven-plugin.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to aem-global-parent 2.0.6.
+      </action>
+    </release>
+
     <release version="2.0.0" date="2022-01-13">
       <action type="update" dev="sseifert">
         Do not apply artifactId prefix for release tags as most artifacts have a dedicated git repository.
