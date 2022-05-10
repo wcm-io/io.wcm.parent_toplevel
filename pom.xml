@@ -160,6 +160,12 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <!-- Use newer version of OSGi converter to avoid problems running unit tests with Java 17 -->
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.util.converter</artifactId>
+        <version>1.0.8</version>
+      </dependency>
 
       <!-- Testing -->
       <dependency>
