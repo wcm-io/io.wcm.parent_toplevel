@@ -28,7 +28,7 @@
         Switch to Java 11 as minimum version.
       </action>
       <action type="update" dev="sseifert">
-        Update to aem-global-parent 2.0.18.
+        Update to aem-global-parent 2.1.0.
       </action>
     </release>
 
