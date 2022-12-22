@@ -5,7 +5,7 @@
 
 Toplevel POM for all wcm.io projects.
 
-Issues: https://wcm-io.atlassian.net/browse/WTOOL<br/>
+Issues: https://github.com/wcm-io/io.wcm.parent_toplevel/issues<br/>
 Wiki: https://wcm-io.atlassian.net/wiki/<br/>
 Continuous Integration: https://github.com/wcm-io/io.wcm.parent_toplevel/actions<br/>
 Commercial support: https://wcm.io/commercial-support.html
