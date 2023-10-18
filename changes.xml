@@ -25,7 +25,10 @@
 
     <release version="2.2.4" date="not released">
       <action type="update" dev="sseifert">
-        Update to aem-global-parent 2.1.8.
+        Update to aem-global-parent 2.1.9.
+      </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
       </action>
     </release>
 
