@@ -452,6 +452,7 @@
   </reporting>
 
   <profiles>
+
     <!-- profile used for building releases and deployment to sonatype/maven central -->
     <profile>
       <id>release-profile</id>
@@ -494,6 +495,32 @@
         </plugins>
       </build>
     </profile>
+
+    <!-- Disable parallel test execution for JUnit 5 for Java 21: We had problems in some modules with ThreadsafeMockAdapterManagerWrapper not working properly on GitHub runners -->
+    <profile>
+      <id>disable-junit5-parallel-test-execution-java21</id>
+      <activation>
+        <jdk>21</jdk>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <configuration>
+                <properties>
+                  <configurationParameters>
+                    junit.jupiter.execution.parallel.enabled = false
+                  </configurationParameters>
+                </properties>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+
   </profiles>
 
   <distributionManagement>
