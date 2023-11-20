@@ -23,6 +23,18 @@
     xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
   <body>
 
+    <release version="2.2.4" date="2023-11-20">
+      <action type="update" dev="sseifert">
+        Update to aem-global-parent 2.1.12.
+      </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
+      </action>
+      <action type="update" dev="sseifert">
+        Disable parallel test execution for JUnit 5 for Java 21: We had problems in some modules with ThreadsafeMockAdapterManagerWrapper not working properly on GitHub runners.
+      </action>
+    </release>
+
     <release version="2.2.2" date="2023-09-04">
       <action type="update" dev="sseifert">
         Update to aem-global-parent 2.1.6.
