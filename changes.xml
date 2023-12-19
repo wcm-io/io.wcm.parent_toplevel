@@ -27,6 +27,9 @@
       <action type="update" dev="sseifert">
         Update to aem-global-parent 2.1.16.
       </action>
+      <action type="update" dev="sseifert">
+        Update Site categories.
+      </action>
     </release>
 
     <release version="2.2.8" date="2023-12-18">
