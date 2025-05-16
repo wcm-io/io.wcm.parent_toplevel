@@ -29,7 +29,10 @@
         Remove sling-initial-content-transform-maven-plugin - the workaround with additionally deploying a bundle without Sling-Initial-Content and a content package is no longer required.
       </action>
       <action type="update" dev="sseifert">
-        Update to aem-global-parent 2.1.30.
+        Enable rendering of changes reports in HTML format again by reconfiguring maven-changes-plugin 3.0.0-M3.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to aem-global-parent 2.1.32.
       </action>
     </release>
 
