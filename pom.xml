@@ -25,13 +25,13 @@
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.aem-global-parent</artifactId>
-    <version>2.1.26</version>
+    <version>2.1.32</version>
     <relativePath />
   </parent>
 
   <groupId>io.wcm</groupId>
   <artifactId>io.wcm.parent_toplevel</artifactId>
-  <version>2.4.4</version>
+  <version>2.5.0</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -89,7 +89,7 @@
     <site.deploy.url>scm:git:https://github.com/wcm-io/wcm-io.github.io.git</site.deploy.url>
 
     <!-- Versions -->
-    <mockito.version>5.15.2</mockito.version>
+    <mockito.version>5.18.0</mockito.version>
 
     <!-- set default empty argLine when not executing jacoco -->
     <argLine />
@@ -172,7 +172,7 @@
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>5.11.4</version>
+        <version>5.13.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -267,24 +267,6 @@
                   <message>Apache Felix maven-bundle-plugin must not longer be used in wcm.io Modules - migrate to bnd Maven plugins.</message>
                 </bannedPlugins>
               </rules>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
-      <!-- For OSGi bundles with Sling-Initial-Content: Additionaly generated two attached files for each bundle containing the content 
-           in a content package and the OGSi bundle without Sling-Initial-Content as an alternative for AEMaaCS deployment.
-           See https://wcm-io.atlassian.net/l/c/3wZPHGBo for more context -->
-      <plugin>
-        <groupId>io.wcm.maven.plugins</groupId>
-        <artifactId>sling-initial-content-transform-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>transform</goal>
-            </goals>
-            <configuration>
-              <group>wcm-io</group>
             </configuration>
           </execution>
         </executions>
@@ -455,7 +437,7 @@
         <artifactId>maven-changes-plugin</artifactId>
         <configuration>
           <!-- Allow HTML markup in CDATA sections in changes reports -->
-          <escapeHTML>false</escapeHTML>
+          <escapeText>false</escapeText>
           <!-- Do not generate links to teamlist reports -->
           <teamlist>none</teamlist>
         </configuration>
@@ -507,15 +489,12 @@
           </plugin>
           <!-- configure staging process at sonatype.-->
           <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
             <inherited>true</inherited>
             <extensions>true</extensions>
             <configuration>
-              <serverId>ossrh</serverId>
-              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-              <!-- Deployed artifacts should go to staging to be reviewed before publish -->
-              <autoReleaseAfterClose>false</autoReleaseAfterClose>
+              <publishingServerId>sonatype-central</publishingServerId>
             </configuration>
           </plugin>
         </plugins>

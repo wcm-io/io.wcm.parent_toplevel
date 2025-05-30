@@ -24,6 +24,24 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
+    <release version="2.5.0" date="2025-05-30">
+      <action type="update" dev="sseifert">
+        Remove sling-initial-content-transform-maven-plugin - the workaround with additionally deploying a bundle without Sling-Initial-Content and a content package is no longer required.
+      </action>
+      <action type="update" dev="sseifert">
+        Enable rendering of changes reports in HTML format again by reconfiguring maven-changes-plugin 3.0.0-M3.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to aem-global-parent 2.1.32.
+      </action>
+      <action type="update" dev="sseifert">
+        Update Site categories.
+      </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
+      </action>
+    </release>
+
     <release version="2.4.4" date="2025-01-13">
       <action type="update" dev="sseifert">
         Update to aem-global-parent 2.1.26.
