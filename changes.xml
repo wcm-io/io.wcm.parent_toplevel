@@ -24,7 +24,10 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
-    <release version="2.6.4" date="not released">
+    <release version="2.7.0" date="not released">
+      <action type="add" dev="sseifert">
+        Enable sling-initial-content-json-strip-comments-maven-plugin in all builds to strip comments from Sling-Initial-Content JSON files to avoid problems with AEM 6.6.2 (AEM 6.5 LTS SP2).
+      </action>
       <action type="update" dev="sseifert">
         Update to aem-global-parent 2.2.8.
       </action>
