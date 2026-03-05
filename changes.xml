@@ -24,7 +24,10 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
-    <release version="2.7.2" date="not released">
+    <release version="2.8.0" date="not released">
+      <action type="add" dev="sseifert" issue="84">
+        Apply automatic Spotless formatting for Java and POM files.
+      </action>
       <action type="update" dev="sseifert">
         Update to aem-global-parent 2.2.10.
       </action>
