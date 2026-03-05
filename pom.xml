@@ -299,7 +299,7 @@
             </sortPom>
           </pom>
           <upToDateChecking>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
           </upToDateChecking>
         </configuration>
         <dependencies>
