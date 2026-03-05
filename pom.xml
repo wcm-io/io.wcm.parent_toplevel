@@ -25,7 +25,7 @@
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.aem-global-parent</artifactId>
     <version>2.2.9-SNAPSHOT</version>
-    <relativePath/>
+    <relativePath />
   </parent>
 
   <groupId>io.wcm</groupId>
@@ -91,7 +91,7 @@
     <mockito.version>5.22.0</mockito.version>
 
     <!-- set default empty argLine when not executing jacoco -->
-    <argLine/>
+    <argLine />
 
     <!-- Set to 'enabled' to activate org.eclipse.jdt.core.compiler.annotation.nullanalysis feature in eclipse settings -->
     <eclipse.settings.nullanalysis>enabled</eclipse.settings.nullanalysis>
@@ -280,7 +280,7 @@
             <eclipse>
               <file>global-build-tools/eclipse/java-formatter.xml</file>
             </eclipse>
-            <removeUnusedImports/>
+            <removeUnusedImports />
             <licenseHeader>
               <file>global-build-tools/spotless/header-java.txt</file>
             </licenseHeader>
@@ -293,9 +293,11 @@
               <delimiter>&lt;project</delimiter>
             </licenseHeader>
             <sortPom>
-              <expandEmptyElements>false</expandEmptyElements>
-              <nrOfIndentSpace>2</nrOfIndentSpace>
               <sortOrderFile>global-build-tools/spotless/sortpom.xml</sortOrderFile>
+              <nrOfIndentSpace>2</nrOfIndentSpace>
+              <expandEmptyElements>false</expandEmptyElements>
+              <!-- https://issues.apache.org/jira/browse/MRELEASE-1111 -->
+              <spaceBeforeCloseEmptyElement>true</spaceBeforeCloseEmptyElement>
             </sortPom>
           </pom>
           <upToDateChecking>
