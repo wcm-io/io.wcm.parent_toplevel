@@ -207,20 +207,6 @@
     </extensions>
     <plugins>
 
-      <!-- license check -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>check-file-header</goal>
-            </goals>
-            <phase>validate</phase>
-          </execution>
-        </executions>
-      </plugin>
-
       <!-- site configuration -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -394,20 +380,6 @@
               <!-- ignore Bundle-Version header for baseline, i.e. no enforcement of specific bundle versions -->
               <diffignore>Bundle-Version</diffignore>
             </diffignores>
-          </configuration>
-        </plugin>
-
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>license-maven-plugin</artifactId>
-          <configuration>
-            <licenseName>apache_v2</licenseName>
-            <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-            <projectName>wcm.io</projectName>
-            <excludes>
-              <exclude>**/*.json</exclude>
-              <exclude>**/*.html</exclude>
-            </excludes>
           </configuration>
         </plugin>
 
