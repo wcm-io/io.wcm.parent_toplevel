@@ -24,6 +24,24 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
+    <release version="2.8.0" date="2026-04-17">
+      <action type="add" dev="sseifert" issue="84">
+        Apply automatic Spotless formatting for Java and POM files.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to aem-global-parent 2.2.10.
+      </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
+      </action>
+      <action type="update" dev="sseifert">
+        Enable parallel test execution for JUnit 5 for Java 21 again.
+      </action>
+      <action type="remove" dev="sseifert">
+        Remove license-maven-plugin as it is not longer required with spotless plugin.
+      </action>
+    </release>
+
     <release version="2.7.0" date="2026-02-24">
       <action type="add" dev="sseifert">
         Enable sling-initial-content-json-strip-comments-maven-plugin in all builds to strip comments from Sling-Initial-Content JSON files to avoid problems with AEM 6.6.2 (AEM 6.5 LTS SP2).
