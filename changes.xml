@@ -29,6 +29,9 @@
         Switch minimum Java version for build environment to Java 21. Default version for compilation remains Java 11.
       </action>
       <action type="update" dev="sseifert">
+        Set minimum AEM version to AEM 6.5.24 (also compatible for AEM 6.6.2 / AEM 6.5 LTS SP2 and AEMaaCS).
+      </action>
+      <action type="update" dev="sseifert">
         Update to aem-global-parent 2.3.0.
       </action>
     </release>
