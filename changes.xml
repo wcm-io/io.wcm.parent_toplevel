@@ -24,6 +24,21 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
+    <release version="2.9.0" date="2026-06-26">
+      <action type="update" dev="sseifert">
+        Switch to Java 21 as minimum Java version for build environment. Compilation target remains Java 11.
+      </action>
+      <action type="update" dev="sseifert">
+        Switch to AEM 6.5.24 as minimum version (also compatible with AEM 6.6.2 / AEM 6.5 LTS SP2 and AEMaaCS).
+      </action>
+      <action type="update" dev="sseifert">
+        Update to aem-global-parent 2.3.0.
+      </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
+      </action>
+    </release>
+
     <release version="2.8.0" date="2026-04-17">
       <action type="add" dev="sseifert" issue="84">
         Apply automatic Spotless formatting for Java and POM files.
